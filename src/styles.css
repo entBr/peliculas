@@ -1,0 +1,130 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#111827;
+    color:#f3f4f6;
+    line-height:1.6;
+}
+
+.hero{
+    min-height:80vh;
+    background:
+        linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.8)),
+    url("../img/portada.webp");    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:40px;
+}
+
+.hero h1{
+    font-size:4rem;
+    color:#facc15;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:1.3rem;
+}
+
+nav{
+    background:#020617;
+    text-align:center;
+    padding:18px;
+    position:sticky;
+    top:0;
+}
+
+nav a{
+    color:#f3f4f6;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#facc15;
+}
+
+section{
+    width:90%;
+    max-width:1100px;
+    margin:auto;
+    padding:60px 0;
+}
+
+h2{
+    color:#facc15;
+    margin-bottom:20px;
+    font-size:2rem;
+}
+
+p{
+    margin-bottom:15px;
+}
+
+.cards,
+.personajes{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
+    gap:20px;
+}
+
+.card,
+.personaje{
+    background:#1f2937;
+    padding:25px;
+    border-radius:15px;
+    border:1px solid #374151;
+    transition:.3s;
+}
+
+.card:hover,
+.personaje:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 25px rgba(250,204,21,.15);
+}
+
+.card h3,
+.personaje h3{
+    color:#facc15;
+    margin-bottom:10px;
+}
+
+.subtitulo{
+    margin-top:50px;
+}
+
+blockquote{
+    background:#1f2937;
+    border-left:6px solid #facc15;
+    padding:25px;
+    font-size:1.5rem;
+    font-style:italic;
+    border-radius:10px;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:#020617;
+    color:#9ca3af;
+}
+
+@media(max-width:700px){
+    .hero h1{
+        font-size:2.5rem;
+    }
+
+    nav a{
+        display:block;
+        margin:10px 0;
+    }
+}
